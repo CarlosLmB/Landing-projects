@@ -22,11 +22,27 @@ body {
 header {
     height: 100vh;
     background-image: linear-gradient(to top, #a18cd1b0 0%, #fbc2eb88 100%),url(/images/imagen8.jpg);
+    animation: cambio-imagen 15s infinite;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
+
+@keyframes cambio-imagen {
+    0% {
+      background-image: linear-gradient(to top, #a18cd1b0 0%, #fbc2eb88 100%), url("/images/imagen8.jpg");
+    }
+    33% {
+      background-image: linear-gradient(to top, #a18cd1b0 0%, #fbc2eb88 100%), url("/images/imagen9.jpg");
+    }
+    66% {
+      background-image: linear-gradient(to top, #a18cd1b0 0%, #fbc2eb88 100%), url("/images/imagen10.jpg");
+    }
+    100% {
+      background-image: linear-gradient(to top, #a18cd1b0 0%, #fbc2eb88 100%), url("/images/imagen8.jpg");
+    }
+  }
 
 .head{
     text-align: center;
@@ -113,6 +129,7 @@ header {
 
 .service{
     margin-bottom: 20px;  
+    
 }
 
 .n-service{
@@ -225,7 +242,7 @@ header {
 /*Footer*/
 
 footer{
-    background: #9f8ad0;
+    background: linear-gradient(159deg, rgba(159,138,208,1) 56%, rgba(29,20,51,1) 71%);
     padding-bottom: 0.1px;
 
 }
